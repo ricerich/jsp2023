@@ -12,7 +12,7 @@
 		</div>
 	</nav>
 	<%!String greeting = "Welcome to Web Shopping Mall";
-	String tagline = "Welcome to Web Market!";%>
+	String tagline = "Welcome to Web Market!!!!!!!!!!!!!!!!!!!!!!!!!!!";%>
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">
