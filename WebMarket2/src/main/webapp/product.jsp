@@ -21,7 +21,6 @@
 	<div class="container">
 		<div class="row">
 			<div class ="col-md-5">
-<%-- 				<img src="c:/upload/<%=product.getFilename()%>" style="width: 100%" /> --%>
 				<img src="./upload2/<%=product.getFilename()%>" style="width: 100%" />
 			</div>
 			<div class="col-md-6">

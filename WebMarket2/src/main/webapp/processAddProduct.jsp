@@ -9,7 +9,7 @@
 	request.setCharacterEncoding("UTF-8");
 
 	String filename = "";
-// 	String realFolder = "C:\\upload"; //웹 어플리케이션상의 절대 경로
+	//	String realFolder = "C:\\upload"; //웹 어플리케이션상의 절대 경로
 	String realFolder = getServletContext().getRealPath("/") + "upload2";
 	System.out.println("경로확인---->"+realFolder);
 	

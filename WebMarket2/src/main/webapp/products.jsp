@@ -27,11 +27,10 @@
 					Product product = listOfProducts.get(i);
 			%>
 			<div class="col-md-4">
-<%-- 				<img src ="c:/upload/<%=product.getFilename()%>" style ="width: 100%"> --%>
 				<img src ="./upload2/<%=product.getFilename()%>" style ="width: 100%">
 				<h3><%=product.getPname()%></h3>
 				<p><%=product.getDescription()%>
-				<p><%=product.getUnitPrice()%>원				
+				<p><%=product.getUnitPrice()%>원
 				<p><a href="./product.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상세 정보 &raquo;</a>
 			</div>
 			<%
