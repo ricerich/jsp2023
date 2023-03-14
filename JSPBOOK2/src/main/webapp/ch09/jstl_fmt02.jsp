@@ -13,6 +13,6 @@
 	<p> <fmt:formatNumber value="0.45" type="percent" />
 	<p> <fmt:formatNumber value="3200100" minIntegerDigits="10" minFractionDigits="2" />
 	<p> <fmt:formatNumber value="3200100.45" pattern=".000" />
-	<p> <fmt:formatNumber value="3200100.456" pattern="#,#00.0#" />
+	<p> <fmt:formatNumber value="3200111.456" pattern="#,#00.0#" />
 </body>
 </html>
