@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
 	<security-role>
-		<description></description >
+		<description></description>
 		<role-name>admin</role-name>
 	</security-role>
 	<security-constraint>
@@ -23,4 +23,11 @@
 			<form-error-page>/login_failed.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
+
+	<!-- 11장 예외처리 -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/exceptionNoPage.jsp</location>
+	</error-page>
+	
 </web-app>
