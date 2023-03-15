@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 
 public class LogFilter implements Filter  {
 	
-	public void  init(FilterConfig config) throws ServletException{
+	public void  init(FilterConfig config) {
 		System.out.println("WebMarket 초기화...."); 
 	}
 	
@@ -43,7 +43,7 @@ public class LogFilter implements Filter  {
 	}
 	
 	private String getCurrentTime() {
-		DateFormat formatter = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		DateFormat formatter = new SimpleDateFormat("yyyy년MM월dd일 HH시mm분ss초");
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTimeInMillis(System.currentTimeMillis());
 		return formatter.format(calendar.getTime());

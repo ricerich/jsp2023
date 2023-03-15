@@ -31,7 +31,7 @@
 	</error-page>
 	
 	<!-- 12장 필터 -->
-	 	<filter>
+	<filter>
 		<filter-name>LogFilter</filter-name>
 		<filter-class>filter.LogFilter</filter-class>     
 	</filter>

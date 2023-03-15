@@ -18,6 +18,7 @@ public class LogFileFilter implements Filter {
 
 		if (filename == null)
 			throw new ServletException("로그 파일의 이름을 찾을 수 없습니다.");
+		
 
 		try {
 			writer = new PrintWriter(new FileWriter(filename, true), true);
