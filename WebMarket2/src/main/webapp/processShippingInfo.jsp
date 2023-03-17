@@ -3,7 +3,10 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 
-	Cookie cartId = new Cookie("Shipping_cartId", URLEncoder.encode(request.getParameter("cartId"), "utf-8"));
+	String strCartId = request.getParameter("cartId");
+	strCartId = URLEncoder.encode(strCartId, "utf-8");			
+	Cookie cartId = new Cookie("Shipping_cartId", strCartId );
+	
 	Cookie name = new Cookie("Shipping_name", URLEncoder.encode(request.getParameter("name"), "utf-8"));
 	Cookie shippingDate = new Cookie("Shipping_shippingDate",	URLEncoder.encode(request.getParameter("shippingDate"), "utf-8"));
 	Cookie country = new Cookie("Shipping_country",	URLEncoder.encode(request.getParameter("country"), "utf-8"));
