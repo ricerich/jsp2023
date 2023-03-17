@@ -9,6 +9,6 @@ CREATE TABLE  product(
 	p_condition VARCHAR(20),
 	p_fileName  VARCHAR(20),
 	PRIMARY KEY (p_id)
-)default ;
+) ;
 
 desc product;
