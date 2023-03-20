@@ -76,6 +76,7 @@
 	pstmt.setLong(7, stock);
 	pstmt.setString(8, condition);
 	pstmt.setString(9, fileName);
+	
 	pstmt.executeUpdate();
 	
 	if (pstmt != null)
