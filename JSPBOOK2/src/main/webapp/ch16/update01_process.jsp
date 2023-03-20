@@ -17,7 +17,7 @@
 		Statement stmt = null;
 		
 		try {			
-			String sql = "select id, passwd from member where id = '" + id + "'";
+			String sql = "select id, passwd from member where id = '"+id+"' ";
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);
 

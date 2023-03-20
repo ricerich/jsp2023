@@ -13,8 +13,8 @@
 			<th>이름</th>
 		</tr>
 		<%
-			ResultSet rs = null;			
 			PreparedStatement pstmt = null;
+			ResultSet rs = null;			
 
 			try {
 				String sql = "select * from member";

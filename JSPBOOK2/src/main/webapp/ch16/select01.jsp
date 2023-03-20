@@ -13,11 +13,11 @@
 			<th>이름</th>
 		</tr>
 		<%
-			ResultSet rs = null;
 			Statement stmt = null;
+			ResultSet rs = null;
 
 			try {
-				String sql = "select * from member";
+				String sql = "select id, passwd, name from member";
 				stmt = conn.createStatement();
 				rs = stmt.executeQuery(sql);
 

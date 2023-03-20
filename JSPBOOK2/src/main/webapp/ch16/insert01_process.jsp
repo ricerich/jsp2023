@@ -18,8 +18,13 @@
 		try {
 			String sql = "INSERT INTO Member(id, passwd, name) VALUES('" + id + "','" + passwd + "', '" + name + "')";
 			stmt = conn.createStatement();
-			stmt.executeUpdate(sql);
-			out.println("Member 테이블 삽입이 성공했습니다.");
+			int success = stmt.executeUpdate(sql);
+			
+			if(success == 1)
+				out.println("Member 테이블 삽입이 성공했습니다.");
+			else if(success == 0)
+				out.println("Member 테이블 삽입이 실패했습니다.");
+			
 		} catch (SQLException ex) {
 			out.println("Member 테이블 삽입이 실패했습니다.<br>");
 			out.println("SQLException: " + ex.getMessage());

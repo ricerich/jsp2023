@@ -14,6 +14,7 @@
 		String name = request.getParameter("name");
 
 		ResultSet rs = null;
+		
 		PreparedStatement pstmt = null;
 		
 		try {
