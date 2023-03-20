@@ -77,7 +77,7 @@
 						<label class="col-sm-2">제고 수</label>
 						<div class="col-sm-3">
 							<input type="text" id="unitsInStock" name="unitsInStock"
-								class="form-control" value="<%=String.valueOf(rs.getLong("p_unitsInStock")) %>">
+								class="form-control" value="<%=rs.getLong("p_unitsInStock") %>">
 						</div>
 					</div>
 					<div class="form-group row">
