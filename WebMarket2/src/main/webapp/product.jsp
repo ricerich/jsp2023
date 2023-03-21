@@ -32,8 +32,11 @@
 	<%@ include file="dbconn.jsp"%>
 	<%
 		String id = request.getParameter("id");
-		String sql = "select * from product where p_id = '"+id+"'";
+// 		String sql = "select * from product where p_id = '"+id+"'";
+		String sql = "select * from product where p_id = ?";
 		pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, id);
+		
 		rs = pstmt.executeQuery();
 		
 		if(rs.next())

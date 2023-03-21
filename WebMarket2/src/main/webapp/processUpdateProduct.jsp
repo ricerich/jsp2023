@@ -16,6 +16,7 @@
 
 	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType,
 			new DefaultFileRenamePolicy());
+	
 	String productId = multi.getParameter("productId");
 	String name = multi.getParameter("name");
 	String unitPrice = multi.getParameter("unitPrice");

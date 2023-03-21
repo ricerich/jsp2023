@@ -42,7 +42,7 @@
 <%-- 				<p><%=product.getUnitPrice()%>원 --%>
 <%-- 				<p><a href="./product.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상세 정보 &raquo;</a> --%>
 <!-- 			</div> -->
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<img src="./upload2/<%=rs.getString("p_fileName")%>" style="width: 100%">
 				<h3><%=rs.getString("p_name")%></h3>
 				<p><%=rs.getString("p_description")%>
