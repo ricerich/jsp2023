@@ -13,8 +13,8 @@
 		String passwd = request.getParameter("passwd");		
 	%>
 	<sql:setDataSource var="dataSource"
-		url="jdbc:mysql://localhost:3306/JSPBookDB"
-		driver="com.mysql.jdbc.Driver" user="root" password="1234" />
+		url="jdbc:oracle:thin:@localhost:1521:xe"
+		driver="oracle.jdbc.driver.OracleDriver" user="webmarket" password="webmarket1234" />
 
 
 	<sql:update dataSource="${dataSource}" var="resultSet">
