@@ -289,7 +289,7 @@ public class BoardDAO {
 			conn = DBConnection.getConnection();
 			pstmt = conn.prepareStatement(sql);
 			
-			conn.setAutoCommit(false);
+			//conn.setAutoCommit(false);
 
 			pstmt.setString(1, board.getName());
 			pstmt.setString(2, board.getSubject());
@@ -297,7 +297,7 @@ public class BoardDAO {
 			pstmt.setInt(4, board.getNum());
 
 			pstmt.executeUpdate();			
-			conn.commit();
+			//conn.commit();
 
 		} catch (Exception ex) {
 			System.out.println("updateBoard() 에러 : " + ex);

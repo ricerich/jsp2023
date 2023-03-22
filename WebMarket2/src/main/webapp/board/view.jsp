@@ -28,19 +28,19 @@
 			<div class="form-group row">
 				<label class="col-sm-2 control-label" >성명</label>
 				<div class="col-sm-3">
-					<input name="name" class="form-control"	value=" <%=notice.getName()%>">
+					<input name="name" class="form-control"	value="<%=notice.getName()%>">
 				</div>
 			</div>
 			<div class="form-group row">
 				<label class="col-sm-2 control-label" >제목</label>
 				<div class="col-sm-5">
-					<input name="subject" class="form-control"	value=" <%=notice.getSubject()%>" >
+					<input name="subject" class="form-control"	value="<%=notice.getSubject()%>" >
 				</div>
 			</div>
 			<div class="form-group row">
 				<label class="col-sm-2 control-label" >내용</label>
 				<div class="col-sm-8" style="word-break: break-all;">
-					<textarea name="content" class="form-control" cols="50" rows="5"> <%=notice.getContent()%></textarea>
+					<textarea name="content" class="form-control" cols="50" rows="5"><%=notice.getContent()%></textarea>
 				</div>
 			</div>
 			<div class="form-group row">
