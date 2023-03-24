@@ -52,5 +52,15 @@ function CheckAddProduct() {
 		return false;
 	}
 
-	 document.newProduct.submit()
+//	 document.newProduct.submit()
+	var a1 = "newProduct";
+	document.forms[a1].submit();
+
 }
+
+
+
+
+
+
+
