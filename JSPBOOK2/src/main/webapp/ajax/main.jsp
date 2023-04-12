@@ -23,7 +23,8 @@
 		
 		createAJAX(); // createXHR() 메소드 호출
 		
-		var url = "./testFile.jsp"; //요청 url 설정
+// 		var url = "./testFile.jsp"; //요청 url 설정
+		var url = "./testDB.jsp"; //요청 url 설정
 		var reqparam = "user_id="+user_id;
 		
 		ajax1.onreadystatechange = resGetData; // 다되면 실행할 함수 등록(호출 아님. 역호출)
@@ -41,10 +42,10 @@
 				//alert("2");
 				
 				var result = ajax1.responseText;
- 				alert(result);
+ 				//alert(result);
 				
  				var objRes = eval("("+result+")");
- 				alert(objRes);
+ 				//alert(objRes);
 				
 				var num = objRes.datas.length;
 				var res = "<table class='table table-hover'>";
@@ -75,7 +76,7 @@
 				}
 				res += "</table>";
 				
-				alert(res);
+				//alert(res);
 				resDiv.innerHTML = res;
 			}
 		}
